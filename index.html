@@ -1,0 +1,169 @@
+<svg class="background">
+    <image href="images/skeletons.png"/>
+    
+    <defs>
+      <symbol id="stats">
+        <g id="demogroup">
+          <rect x="48"   y="250" width="238" height="64" fill="black" opacity=".5" />
+          <image id="opaqueTriangle" x="50%-130" y="21%"/>
+          
+          <section x="37%" y="1%" width="80" height="20">
+            <image id="batImg"/>
+            <text id="powerLabel"/>
+          </section>
+          
+          <section x="46%+2" y="22%" width="80" height="20">
+            <image id="activeShadow"/>
+            <image id="activeIcon"/>
+            <text id="activeLabel"/>
+          </section>
+          
+          <section x="16%" y="76%" width="80" height="20">
+            <image id="heartShadow"/>
+            <image id="heartIcon"/>
+            <text id="heartLabel"/>
+          </section>
+          
+          <section x="38%" y="76%" width="80" height="20">
+            <image id="floorsShadow"/>
+            <image id="floorsIcon"/>
+            <text id="floorsLabel"/>
+          </section>
+    
+          <section x="57%" y="76%" width="80" height="20">
+            <image id="caloriesIcon"/>
+            <text id="caloriesLabel"/>
+          </section>
+                 
+          <section x="31%" y="86%" width="80" height="20">
+            <image id="stepsShadow"/>
+            <image id="stepsIcon"/>
+            <text id="stepsLabel"/>
+          </section>
+          
+          <section x="58%" y="86%" width="80" height="20">
+            <image id="distanceShadow"/>
+            <image id="distanceIcon"/>
+            <text id="distanceLabel"/>
+          </section>
+    
+          <section x="50%" y="65%" width="100" height="15">
+            <text id="monthLabel"/>
+            <text id="dayLabel"/>
+            <text id="dayNameLabel"/>
+          </section>
+          
+          <section x="85%" y="50%" width="100" height="15">
+            <text id="apLabel"/>
+            <text id="mLabel"/>
+          </section>
+          
+          
+          <animate attributeName="opacity" begin="enable"
+              from="0" to="1" dur="1" final="keep" />  
+          <animate attributeName="opacity" begin="disable"
+              from="1" to="0" dur=".05" final="keep" /> 
+           
+        </g> 
+      </symbol>
+    </defs>
+    
+    
+    <svg width="100%" height="100%">
+      <use id="statsFadedIn" href="#stats" width="100%" height="100%" />
+    </svg>
+    
+    
+    
+    
+    <defs>
+      <symbol id="shapes">
+    <!--     MAIN TRIANGLE -->
+         <g id="trianglePurpleSideA" transform="translate(-100%-45,500)" pointer-events="visible">
+            <animateTransform attributeType="translate"
+            to="0,0" from="-100%-45,500"  dur=".75" begin="enable" final="keep"/>
+            <animateTransform attributeType="translate"
+            from="0,0" to="-100%-45,500" begin="disable" dur=".05" />
+            <line x1="168" y1="50" x2="50" y2="250" fill="purple" stroke-width="9" />
+        </g>
+        <g id="trianglePurpleSideB" transform="translate(-250,-150%)" pointer-events="visible">
+            <animateTransform attributeType="translate"
+            to="0,0" from="-250,-150%"  dur=".75" begin="enable" final="keep"/>
+            <animateTransform attributeType="translate"
+            from="0,0" to="-180,-200%" begin="disable" dur=".05" />
+            <line x1="168" y1="50" x2="286" y2="250" fill="purple" stroke-width="9" />
+        </g>
+        <g id="trianglePurpleSideC" transform="translate(200%,0)" pointer-events="visible">
+            <animateTransform attributeType="translate"
+            to="0,0" from="200%,0"  dur=".75" begin="enable" final="keep"/>
+            <animateTransform attributeType="translate"
+            from="0,0" to="200%,0" begin="disable" dur=".05" />
+            <line x1="50" y1="250" x2="286" y2="250" fill="purple" stroke-width="9" />
+        </g>
+  
+  
+        <g id="triangleAntWhiteSideA" transform="translate(-100%-45,500)" pointer-events="visible">
+            <animateTransform attributeType="translate"
+            to="0,0" from="-100%-45,500"  dur=".75" begin="enable" final="keep"/>
+            <animateTransform attributeType="translate"
+            from="0,0" to="-100%-45,500" begin="disable" dur=".05" />
+            <line x1="168" y1="50" x2="50" y2="250" fill="antiquewhite" stroke-width="5" />
+        </g>
+        <g id="triangleAntWhiteSideB" transform="translate(-250,-150%)" pointer-events="visible">
+            <animateTransform attributeType="translate"
+            to="0,0" from="-250,-150%"  dur=".75" begin="enable" final="keep"/>
+            <animateTransform attributeType="translate"
+            from="0,0" to="-180,-200%" begin="disable" dur=".05" />
+            <line x1="168" y1="50" x2="286" y2="250" fill="antiquewhite" stroke-width="5" />
+        </g>
+        <g id="triangleAntWhiteSideC" transform="translate(200%,0)" pointer-events="visible">
+            <animateTransform attributeType="translate"
+            to="0,0" from="200%,0"  dur=".75" begin="enable" final="keep"/>
+            <animateTransform attributeType="translate"
+            from="0,0" to="200%,0" begin="disable" dur=".05" />
+            <line x1="50" y1="250" x2="286" y2="250" fill="antiquewhite" stroke-width="5" />
+        </g>
+  
+    <!--     2ND TO BOTTOM LINE -->
+        <g id="upperLinePurple" transform="translate(-200%,0)" pointer-events="visible">
+            <animateTransform attributeType="translate"
+            to="0,0" from="-200%,0"  dur=".75" begin="enable" final="keep"/>
+            <animateTransform attributeType="translate"
+            from="0,0" to="-200%,0" begin="disable" dur=".05" />
+            <line x1="50" y1="284" x2="286" y2="284" fill="purple" stroke-width="9" />
+        </g>
+        <g id="upperLineAntWhite" transform="translate(-200%,0)" pointer-events="visible">
+            <animateTransform attributeType="translate"
+            to="0,0" from="-200%,0"  dur=".75" begin="enable" final="keep"/>
+            <animateTransform attributeType="translate"
+            from="0,0" to="-200%,0" begin="disable" dur=".05" />
+            <line x1="50" y1="284" x2="286" y2="284" fill="antiquewhite" stroke-width="5" />
+        </g>
+  
+    <!--     BOTTOM LINE -->
+         <g id="lowerLinePurple" transform="translate(200%,0)" pointer-events="visible">
+            <animateTransform attributeType="translate"
+            to="0,0" from="200%,0"  dur=".75" begin="enable" final="keep"/>
+            <animateTransform attributeType="translate"
+            from="0,0" to="200%,0" begin="disable" dur=".05" />
+            <line x1="50" y1="318" x2="286" y2="318" fill="purple" stroke-width="9" />
+        </g>
+        <g id="lowerLineAntWhite" transform="translate(200%,0)" pointer-events="visible">
+            <animateTransform attributeType="translate"
+            to="0,0" from="200%,0"  dur=".75" begin="enable" final="keep"/>
+            <animateTransform attributeType="translate"
+            from="0,0" to="200%,0" begin="disable" dur=".05" />
+            <line x1="50" y1="318" x2="286" y2="318" fill="antiquewhite" stroke-width="5" />
+        </g>
+      </symbol>
+    </defs>
+    <svg width="100%" height="100%">
+        <use id="assemble" href="#shapes" width="100%" height="100%" />
+    </svg>
+    
+    <text id="myLabel" />
+    
+     <!-- USE KPAY UI CODE - DO NOT MODIFY BELOW THIS LINE - ADD ALL OWN UI CODE ABOVE THIS LINE -->
+    <g layer="10000"><use href="#kpay" /></g>
+  </svg>
+  
