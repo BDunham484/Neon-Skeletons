@@ -1,0 +1,209 @@
+﻿2020-08-08: v3.0.0
+==================
+- added support for Fitbit SDK 5
+- the library now uses KiezelPay API v2 which generates 6-digit codes instead of 5-digit codes. These 6-digit codes are valid for 5 hours instead of 1 hour.
+- checksum validation has been removed completely
+
+
+2020-02-21: v1.3.4
+==================
+- make sure accounttokens stored in localstorage are transferred to cluster storage at startup
+==> changed files since previous release:
+      - companion/kpay/*/kpay_companion.js (modified)
+
+
+2019-12-20: v1.3.3
+==================
+- added the file "/app/kpay/*/kpay_dialogs_aod.js" which should be used instead of the file kpay_dialogs.js when your clock uses AOD
+==> changed files since previous release:
+      - app/kpay/*/kpay_dialogs_aod.js (added)
+
+
+2019-11-11: v1.3.2
+===================
+- added an extra check for the app cluster storage permission before using the cluster storage in the companion
+==> changed files since previous release:
+      - companion/kpay/*/kpay_companion.js (modified)
+
+
+2019-11-05: v1.3.1
+===================
+- fixed a bug which so the "Licensed" event also fires in case the app detects after the first check that it is already licensed
+==> changed files since previous release:
+      - app/kpay/*/kpay_core.js (modified)
+
+
+2019-11-04: v1.3.0
+===================
+- use translations for kpay texts
+- use built-in SHA256 hashing for checksum checking
+- use app cluster storage to store the accounttoken in the companion
+==> changed files since previous release:
+      - app/i18n/de-DE.po (new)
+      - app/i18n/en-US.po (new)
+      - app/i18n/es-ES.po (new)
+      - app/i18n/fr-FR.po (new)
+      - app/i18n/nl-NL.po (new)
+      - app/kpay/kpay_config.js (modified)
+      - app/kpay/*/kpay_dialogs.js (modified)
+      - app/kpay/*/kpay_validation.js (modified)
+      - companion/kpay/*/kpay_companion.js (modified)
+      - package.json (modified)
+
+
+2018-12-17: v1.2.11
+===================
+- removed masks to prevent white screen bug with apps using a lot of memory
+==> changed files since previous release:
+      - resources/kpay/kpay.gui
+
+
+2018-11-09: v1.2.10
+===================
+- fixed some bugs when triggering trial from the settings page and then cancelling it again from the settings page
+==> changed files since previous release:
+      - app/kpay/*/kpay_core.js
+      - app/kpay/*/kpay_dialogs.js
+      - companion/kpay/*/kpay_companion.js
+
+
+2018-11-07: v1.2.9
+==================
+- fixed bug when triggering trial from the settings page and then cancelling it again from the settings page
+==> changed files since previous release:
+      - app/kpay/*/kpay_core.js
+
+
+2018-10-31: v1.2.8
+==================
+- decreased memory usage some more by removing all unused error handling (fitbit messaging not reliable enough to show errors when connection issues arise)
+==> changed files since previous release:
+      - app/kpay/*/kpay_core.js
+      - app/kpay/*/kpay_dialogs.js
+      - app/kpay/kpay_config.js
+      - common/kpay/kpay_common.js
+
+
+2018-10-30: v1.2.7
+==================
+- decreased memory usage (changes made by Grégoire Sage)
+==> changed files since previous release:
+      - app/kpay/*/kpay_dialogs.js
+
+
+2018-09-12: v1.2.6
+==================
+- added fill property to button texts so global css on text elements doesn't affect the kpay buttons
+==> changed files since previous release:
+      - resources/kpay/kpay.gui
+
+
+2018-09-06: v1.2.5
+==================
+- changed "fuzzy trial time" calculation so settings pages work on Android again
+==> changed files since previous release:
+      - settings/index.jsx
+
+
+2018-07-25: v1.2.4
+==================
+- added "paid apps" popup (required for paid apps released or updated after August 1st 2018)
+- added "width" overrides to the kpay text elements
+==> changed files since previous release:
+      - app/kpay/kpay_config.js
+      - app/kpay/*/kpay_core.js
+      - app/kpay/*/kpay_dialogs.js
+      - resources/kpay/kpay.gui
+
+
+2018-06-07: v1.2.3
+==================
+- fixed error "Uncaught non-error: TypeError: t.apply is not a function" on simulator
+
+
+2018-06-05: v1.2.2
+==================
+- show error when the "Internet" permission is not granted by the user
+- added functionality to stop the purchase (and resume trial) again after ending the trial before it was over (Special thanks to James Bernsen for sharing this code)
+==> changed files since previous release:
+      - app/kpay/*/kpay_dialogs.js
+      - companion/index.js
+      - companion/*/kpay_companion.js
+      - settings/index.jsx
+
+
+2018-04-21: v1.2.1
+==================
+- put all kpay UI code in a separate "kpay.gui" file
+
+
+2018-04-11: v1.2.0
+==================
+- allow dev to choose which type of messaging to use; file transfer or peersocket
+==> changed files since previous release:
+      - app/index.js
+      - app/kpay/*/kpay.js
+      - app/kpay/*/kpay_core.js
+      - app/kpay/*/kpay_filetransfer.js
+      - app/kpay/*/kpay_messaging.js
+      - companion/kpay/*/kpay_companion.js
+
+
+2018-04-04: v1.1.1
+==================
+- solved issue with updating trial period in settings page
+==> changed files since previous release:
+      - companion/index.js
+      - settings/index.jsx
+
+
+2018-04-01: v1.1.0
+==================
+- use file transfer instead of normal messaging for data from companion to watch (Special thanks to Stephen Rees-Carter and Grégoire Sage for the idea and implementation of this functionality)
+- included functionality to show trial time left and button to end trial on settings page in default lib (Special thanks to James Bernsen for sharing this code)
+
+
+2018-03-19
+==========
+- also show current time in error dialogs
+- by default always supress all errors
+
+
+2018-03-11
+==========
+- added Versa support
+- added option to completely supress errors
+
+
+2017-11-27
+==========
+- added advanced settings to tweak when connection error messages are shown
+
+
+2017-11-24
+==========
+- supress errors for first 30 minutes after install
+- fix bug with storing trial start date on watch file system
+- remove launch reason from companion
+
+
+2017-11-12
+==========
+- replaced deprecated "innerText" property for labels with "text"
+
+
+2017-10-28
+==========
+- Fixed several bugs
+- Added possibility to override account token generation in companion
+- Added possibility to catch kpay status change events in companion
+
+
+2017-10-19
+==========
+Minified and uglyfied source to save memory
+
+
+2017-10-12
+==========
+First beta version of Fitbit lib

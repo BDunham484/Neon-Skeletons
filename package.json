@@ -1,0 +1,32 @@
+{
+  "fitbit": {
+    "appType": "clockface",
+    "appDisplayName": "K-Pay",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#009688",
+    "requestedPermissions": [
+      "access_internet",
+      "access_app_cluster_storage"
+    ],
+    "buildTargets": [
+      "atlas",
+      "vulcan"
+    ],
+    "i18n": {
+      "en": {
+        "name": "K-Pay"
+      }
+    },
+    "appClusterID": "there.wolf.484",
+    "developerID": "ThereWolf",
+    "defaultLanguage": "en-US"
+    
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~5.0.0",
+    "@fitbit/sdk-cli": "^1.7.3"
+  },
+  "scripts": {
+    "build": "fitbit-build"
+  }
+}
