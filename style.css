@@ -1,0 +1,228 @@
+.background {
+    viewport-fill: black;
+  }
+  
+  #powerLabel {
+    font-size: 25;
+    font-family: System-Bold;
+    text-length: 32;
+    text-anchor: end;
+    x: 100;
+    fill: black;
+  }
+  
+  #batImg {
+    width: 40;
+    height: 22;
+    href: "images/battery-100.png";
+    x: 0;
+    fill: red;
+  }
+  
+  
+  #activeLabel {
+    font-size: 25;
+    font-family: System-Bold;
+    text-length: 32;
+    text-anchor: middle;
+    x: 13;
+    y: 50;
+    fill: white;
+  }
+  
+  #activeShadow {
+    width: 29;
+    height: 29;
+    href: "images/azm_black_fill_transparent_36px.png";
+    x: -2;
+    y:-1;
+  }
+  
+  #activeIcon {
+    width: 25;
+    height: 25;
+    href: "images/azm_skyblue_transparent_36px.png";
+  }
+  
+  #myLabel {
+    font-size: 100;
+    font-family: System-Bold;
+    text-length: 32;
+    text-anchor: middle;
+    x: 50%;
+    y: 60%;
+    fill: white;
+  /*   fill: #336666; */
+  /*     fill: #669999; */
+  }
+  
+  #apLabel {
+    font-size:25;
+    font-family: System-Bold;
+    text-length: 32;
+    text-anchor: start;
+    x: 0;
+    y: 0;
+    fill: white;
+  }
+  
+  #mLabel {
+    font-size:25;
+    font-family: System-Bold;
+    text-length: 32;
+    text-anchor: start;
+    x: 0;
+    y: 22;
+    fill: white;
+  }
+  
+  #monthLabel {
+    font-size: 30;
+    font-family: System-Bold;
+    text-length: 32;
+    text-anchor: end;
+    x: 35;
+    fill: white;
+  }
+  
+  #dayLabel {
+    font-size: 30;
+    font-family: System-Bold;
+    text-length: 32;
+    text-anchor: start;
+    x: 40;
+    fill: white;
+  }
+  
+  #dayNameLabel {
+    font-size: 30;
+    font-family: System-Bold;
+    text-length: 32;
+    text-anchor: end;
+    x: -20;
+    fill: white;
+  }
+  
+  #opaqueTriangle {
+    width: 230;
+    height: 195;
+    href: "images/opaque-triangle.png";
+    
+  }
+  
+  #heartLabel {
+    font-size: 25;
+    font-family: Seville-Bold;
+    text-length: 32;
+    text-anchor: start;
+    x: 25;
+    y: 22;
+    fill: white;
+  }
+  
+  #heartShadow {
+    width: 25;
+    height: 25;
+    href: "images/heart_rate_black_transparent_36px.png";
+    x: -1;
+    y: -1;
+    }
+  
+  #heartIcon {
+    width: 25;
+    height: 25;
+    href: "images/heart_rate_skyblue_transparent_36px.png";
+    }
+  
+  #floorsLabel {
+    font-size: 25;
+    font-family: System-Bold;
+    text-length: 32;
+    text-anchor: start;
+    x: 25;
+    y: 22;
+    fill: white;
+  }
+  
+  #floorsShadow {
+    width: 25;
+    height: 25;
+    href: "images/floors_black_transparent_36px.png";
+    x: -1;
+    y: -1;
+  }
+  
+  #floorsIcon {
+    width: 25;
+    height: 25;
+    href: "images/floors_skyblue_transparent_36px.png";
+  }
+  
+  #caloriesLabel {
+    font-size: 25;
+    font-family: System-Bold;
+    text-length: 32;
+    text-anchor: start;
+    x: 25;
+    y: 22;
+    fill: white;
+  }
+  
+  #caloriesIcon {
+    width: 25;
+    height: 25;
+    href: "images/calories_skyblue_transparent_36px.png";
+  }
+  
+  #stepsLabel {
+    font-size: 25;
+    font-family: System-Bold;
+    text-length: 32;
+    text-anchor: middle;
+    x: 10;
+    y: 21;
+    fill: white;
+  }
+  
+  #stepsShadow {
+    width: 25;
+    height: 25;
+    href: "images/steps_black_transparent_36px.png";
+    x: -47;
+    y: -3;
+  }
+  
+  #stepsIcon {
+    width: 25;
+    height: 25;
+    href: "images/steps_skyblue_transparent_36px.png";
+    x: -49;
+  }
+  
+  #distanceLabel {
+    font-size: 25;
+    font-family: System-Bold;
+    text-length: 32;
+    text-anchor: start;
+    x: 10;
+    y: 22;
+    fill: white;
+  }
+  
+  #distanceShadow {
+    width: 25;
+    height: 25;
+    href: "images/distance_black_transparent_36px.png";
+    x: -20;
+    y: -3;
+  }
+  
+  #distanceIcon {
+    width: 25;
+    height: 25;
+    href: "images/distance_skyblue_transparent_36px.png";
+    x: -20;
+  }
+  
+  
+  
